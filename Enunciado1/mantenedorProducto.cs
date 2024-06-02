@@ -113,7 +113,7 @@ namespace Enunciado1
                 txt_nombre.BackColor = Color.PaleVioletRed;
                 return false;
             }
-            txt_nombre.BackColor = Color.Green;
+            txt_nombre.BackColor = Color.LightGreen;
 
             if (txt_marca.Text.Length < 3 || txt_marca.Text.Length > 25)
             {
@@ -121,7 +121,7 @@ namespace Enunciado1
                 txt_marca.BackColor = Color.PaleVioletRed;
                 return false;
             }
-            txt_marca.BackColor = Color.Green;
+            txt_marca.BackColor = Color.LightGreen;
 
             if (nud_precio.Value <= 0)
             {
@@ -129,7 +129,7 @@ namespace Enunciado1
                 nud_precio.BackColor = Color.PaleVioletRed;
                 return false;
             }
-            nud_precio.BackColor = Color.Green;
+            nud_precio.BackColor = Color.LightGreen;
 
             int selectedIndex = cb_usuario.SelectedIndex;
             if (selectedIndex == -1)
@@ -138,7 +138,10 @@ namespace Enunciado1
                 cb_usuario.BackColor = Color.PaleVioletRed;
                 return false;
             }
-            cb_usuario.BackColor = Color.Green;
+            txt_nombre.BackColor = Color.LightGreen;
+            txt_marca.BackColor = Color.LightGreen;
+            nud_precio.BackColor = Color.LightGreen;
+            cb_usuario.BackColor = Color.LightGreen;
 
             return true;
         }

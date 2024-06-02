@@ -47,6 +47,7 @@ namespace Enunciado1
                     // Agregar los datos al DataGridView
                     dgv_dueno.Rows.Add(nombre, apellido, telefono);
 
+                    MessageBox.Show("Ingresado correctamente!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     // Limpiar los TextBox
                     limpiar();
                 }
@@ -67,10 +68,10 @@ namespace Enunciado1
             txt_nombre.Clear();
             txt_apellido.Clear();
             txt_telefono.Clear();
-            txt_estado.Clear();
+            txt_estado.Text = "";
             txt_nombre.BackColor = Color.White;
             txt_apellido.BackColor = Color.White;
-            txt_estado.BackColor = Color.White;
+            txt_telefono.BackColor = Color.White;
             txt_estado.BackColor = Color.White;
         }
 
@@ -112,7 +113,10 @@ namespace Enunciado1
 
             // Si todas las validaciones son exitosas
             txt_estado.Text = "Campos válidos";
-            txt_estado.BackColor = Color.Green;
+            txt_estado.BackColor = Color.LightGreen;
+            txt_nombre.BackColor = Color.LightGreen;
+            txt_apellido.BackColor = Color.LightGreen;
+            txt_telefono.BackColor = Color.LightGreen;
             return true;
         }
 

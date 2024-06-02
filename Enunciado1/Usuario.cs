@@ -21,7 +21,7 @@ namespace Enunciado1
 
         public override string ToString()
         {
-            return Nombre + "" + Apellido;
+            return Nombre + " " + Apellido;
         }
     }
 }
